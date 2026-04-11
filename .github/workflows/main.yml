@@ -17,7 +17,7 @@ jobs:
           python-version: 3.12
       - name: Install depencies
         run: |
-          python -m install --upgrade pip setuptools
-          pip install flake8=7.3.0 flake8-isort==7.0.0
+          python -m pip install --upgrade pip setuptools
+          pip install flake8==7.3.0 flake8-isort==7.0.0
       - name: Tests with flake8
         run: python -m flake8 backend/
