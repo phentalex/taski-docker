@@ -16,7 +16,7 @@ services:
     depends_on:
       - db
   frontend:
-    image: phentalex/taski-frontend
+    image: phentalex/taski_frontend
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
